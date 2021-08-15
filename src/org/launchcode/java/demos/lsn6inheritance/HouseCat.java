@@ -14,11 +14,28 @@ public class HouseCat extends Cat {
     }
 
     @Override
-    public String noise() {
-        return "Hello, my name is " + name + "!";
+//    public String noise() {
+//        return "Hello, my name is " + name + "!";
+//    }
+
+    public String noise(){
+        if(isSatisfied()){
+            return "Hello, my name is " + name + "!";
+        } else {
+            return super.noise(); // prints "Meeeeeeooooowww!"
+        }
     }
+
+
+
 
     public String purr() {
         return "I'm a HouseCat";
     }
+
+    public HouseCat(String aName) {
+        name = aName;
+    }
+
+
 }
