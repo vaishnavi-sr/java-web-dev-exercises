@@ -13,7 +13,7 @@ public abstract class Ingredient {
         allergens = someAllergens;
     }
 
-    public String getName() {
+    public Comparable getName() {
         return name;
     }
 
